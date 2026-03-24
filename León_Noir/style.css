@@ -1,0 +1,505 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat', sans-serif;
+}
+
+body{
+    background:#0A0A0A;
+    color:white;
+}
+
+/* NAVBAR */
+header{
+    background:black;
+    padding:15px 0;
+    border-bottom:1px solid #222;
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:2px solid silver;
+    margin-right:10px;
+}
+
+.logo h1{
+    font-family:'Playfair Display', serif;
+    font-size:24px;
+    letter-spacing:2px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:silver;
+}
+
+/* HERO */
+.hero{
+    height:60vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+        url('portada.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero h2{
+    font-family:'Playfair Display', serif;
+    font-size:48px;
+    letter-spacing:3px;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:18px;
+    color:silver;
+}
+
+/* PRODUCTOS */
+.products{
+    width:90%;
+    margin:50px auto;
+}
+
+.products h2{
+    font-family:'Playfair Display', serif;
+    font-size:32px;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#111;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    border:1px solid #222;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:silver;
+}
+
+.card img{
+    width:100%;
+    max-height:250px;
+    object-fit:contain;
+}
+
+.card h3{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.card p{
+    color:silver;
+    font-size:14px;
+}
+
+.price{
+    font-size:20px;
+    margin:10px 0;
+    font-weight:bold;
+}
+
+button{
+    padding:10px 25px;
+    background:black;
+    color:white;
+    border:1px solid silver;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:silver;
+    color:black;
+}
+
+/* CONTACTO */
+.contact-section{
+    padding:80px 0;
+    background:linear-gradient(180deg,#000,#0a0a0a);
+    display:flex;
+    justify-content:center;
+}
+
+.contact-box{
+    text-align:center;
+    background:#111;
+    padding:40px 60px;
+    border-radius:15px;
+    border:1px solid silver;
+    box-shadow:0 0 25px rgba(255,255,255,0.05);
+}
+
+.contact-box h2{
+    font-family:'Playfair Display', serif;
+    font-size:32px;
+    letter-spacing:2px;
+}
+
+.contact-box p{
+    color:silver;
+    margin:10px 0 30px;
+}
+
+.contact-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.btn-contact{
+    padding:12px 28px;
+    text-decoration:none;
+    border:1px solid silver;
+    color:white;
+    font-size:14px;
+    letter-spacing:1px;
+    transition:0.3s;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+/* HOVER COLORES */
+.whatsapp:hover{
+    background:#25D366;
+    color:black;
+}
+
+.email:hover{
+    background:white;
+    color:black;
+}
+
+.instagram:hover{
+    background:#C13584;
+    color:white;
+}
+
+/* FOOTER */
+footer{
+    background:black;
+    padding:20px;
+    text-align:center;
+    border-top:1px solid #222;
+    margin-top:50px;
+}
+
+/* RESPONSIVE CELULAR */
+@media(max-width:768px){
+
+    .logo img{
+        width:45px;
+        height:45px;
+    }
+
+    .logo h1{
+        font-size:18px;
+    }
+
+    nav{
+        width:100%;
+        text-align:center;
+        margin-top:10px;
+    }
+
+    nav a{
+        margin:0 8px;
+        font-size:12px;
+    }
+
+    .hero{
+        height:40vh;
+    }
+
+    .hero h2{
+        font-size:26px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .contact-box{
+        padding:25px;
+        width:90%;
+    }
+    /* ABOUT */
+.about{
+    padding:80px 0;
+    background:#0a0a0a;
+    display:flex;
+    justify-content:center;
+}
+
+.about-box{
+    width:70%;
+    text-align:center;
+}
+
+.about h2{
+    font-family:'Playfair Display', serif;
+    font-size:32px;
+}
+
+.about p{
+    color:silver;
+    margin-top:15px;
+    font-size:16px;
+}
+
+/* TRUST */
+.trust{
+    padding:60px 0;
+    background:black;
+}
+
+.trust-grid{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.trust-card{
+    background:#111;
+    padding:25px;
+    border-radius:10px;
+    border:1px solid silver;
+    text-align:center;
+}
+
+.trust-card h3{
+    font-size:20px;
+    margin-bottom:10px;
+}
+@media(max-width:768px){
+    .category-premium{
+        width:95%;
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .cat-card{
+        padding:25px 10px;
+    }
+
+    .cat-card i{
+        font-size:35px;
+    }
+
+    .cat-card span{
+        font-size:15px;
+    }
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:25px;
+    box-shadow:0 0 15px rgba(0,0,0,0.4);
+    z-index:999;
+}
+/* SECCION GARANTIA Y ENVIOS */
+.trust{
+    padding:60px 0;
+    background:black;
+}
+
+.trust-grid{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.trust-card{
+    background:#111;
+    padding:25px;
+    border-radius:12px;
+    border:1px solid silver;
+    text-align:center;
+    transition:0.3s;
+}
+
+.trust-card:hover{
+    transform:translateY(-5px);
+    border-color:white;
+}
+
+.trust-card h3{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.trust-card p{
+    color:silver;
+    font-size:14px;
+}
+/* ICONOS PREMIUM TRUST */
+.trust-card i{
+    font-size:40px;
+    color:silver;
+    margin-bottom:15px;
+    display:block;
+}
+
+/* EFECTO LUJO */
+.trust-card:hover i{
+    color:white;
+    text-shadow:0 0 10px silver;
+}
+.categories{
+    padding:50px 0;
+    text-align:center;
+    background:#000;
+}
+
+.categories h2{
+    font-family:'Playfair Display', serif;
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.category-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.category-buttons a{
+    padding:12px 25px;
+    border:1px solid silver;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.category-buttons a:hover{
+    background:silver;
+    color:black;
+}
+
+/* PROMO CARD */
+.promo{
+    background:linear-gradient(135deg,#111,#222);
+    border:2px solid gold;
+}
+/* CATEGORIAS PREMIUM */
+.categories{
+    padding:80px 0;
+    background:#000;
+    text-align:center;
+}
+
+.categories h2{
+    font-family:'Playfair Display', serif;
+    font-size:34px;
+    letter-spacing:2px;
+    margin-bottom:40px;
+}
+
+.category-premium{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+    width:80%;
+    margin:auto;
+}
+
+/* TARJETA PREMIUM */
+.cat-card{
+    background:#111;
+    padding:35px 20px;
+    border-radius:20px;
+    border:1px solid silver;
+    text-decoration:none;
+    color:white;
+    transition:0.4s ease;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+    box-shadow:0 0 20px rgba(255,255,255,0.03);
+}
+
+/* ICONOS PREMIUM */
+.cat-card i{
+    font-size:45px;
+    color:silver;
+}
+
+/* TEXTO */
+.cat-card span{
+    font-size:18px;
+    letter-spacing:1px;
+    font-weight:500;
+}
+
+/* EFECTO LUJO */
+.cat-card:hover{
+    transform:translateY(-8px);
+    background:linear-gradient(135deg,#111,#1a1a1a);
+    border-color:white;
+    box-shadow:0 0 25px rgba(255,255,255,0.1);
+}
+
+.cat-card:hover i{
+    color:white;
+    text-shadow:0 0 15px silver;
+}
+html{
+    scroll-behavior: smooth;
+}
+}
